@@ -37,7 +37,7 @@ const user = computed(() => props.user)
 const isActive = computed(() => props.isActive)
 const capitalize = useCapitalize()
 const emits = defineEmits(['selectedUser'])
-const activeUser = (user) => {
+const activeUser = (user: User) => {
   emits('selectedUser', user)
 }
 </script>

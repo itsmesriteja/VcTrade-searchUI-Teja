@@ -28,7 +28,7 @@
       </div>
 
       <!-- Content Area -->
-      <div v-if="showCharts & !userSelected" class="p-4">
+      <div v-if="showCharts && !userSelected" class="p-4">
         <ChartStatistics />
       </div>
       <div v-else class="p-4">
@@ -58,7 +58,7 @@ const toggleCharts = () => {
 
 // component communication with userlist
 const userSelected = ref(true)
-const handleUserSelectEvent = (isSelected) => {
+const handleUserSelectEvent = (isSelected: boolean) => {
   userSelected.value = isSelected
   showCharts.value = !isSelected
 }

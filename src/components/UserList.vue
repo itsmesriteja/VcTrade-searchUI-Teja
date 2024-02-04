@@ -105,18 +105,18 @@ const { loadMoreUsers, isFetching } = await useRandomUser(store)
 const emits = defineEmits(['userSelected'])
 
 // event communication to the App.vue component
-const selectUser = (user: any) => {
+const selectUser = (user: User) => {
   store.commit('setSelectedUser', user)
   emits('userSelected', true)
 }
 
-const activeUserId = ref(null)
-const setActiveUser = (user) => {
+const activeUserId = ref('')
+const setActiveUser = (user: User) => {
   activeUserId.value = user.id.value
 }
 
 // set which user is active
-const isActive = (userId, activeUserId) => {
+const isActive = (userId: string, activeUserId: string) => {
   return userId !== null && activeUserId !== null ? userId === activeUserId : false
 }
 
