@@ -2,7 +2,7 @@
   <!-- Fallback template: if there is no user -->
   <div class="flex items-center justify-center h-screen" v-if="!user">
     <div class="text-center">
-      <h1 class="text-3xl font-bold mb-4">Welcome to VC Trade Search UI</h1>
+      <h1 class="text-3xl font-bold mb-4">Welcome to the Search UI</h1>
       <p class="text-lg mb-4">Please select a user to proceed further</p>
     </div>
   </div>

@@ -3,7 +3,6 @@
     <div class="sticky top-0 p-4 bg-white shadow z-10">
       <!-- Search input field -->
       <form>
-        <img :src="logoImage" alt="vcTradeLogo" class="w-24 h-10" />
         <input
           v-model="searchText"
           id="search"
