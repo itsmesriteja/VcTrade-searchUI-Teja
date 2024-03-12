@@ -1,8 +1,8 @@
-# VcTrade-code-challenge
+# Demo Search UI 
 
-Hello Nicolas/ Vc-trade team, 
+Hello
 
-I am glad to welcome you to checkout the mock search UI I developed. 
+I am glad to welcome you to check out the mock search UI I developed. 
 
 This template should help get you started developing with Vue 3 in Vite.
 
